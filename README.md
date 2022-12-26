@@ -12,6 +12,8 @@
 
 **Paper:** https://arxiv.org/abs/2102.09548
 
+---
+
 ## Inductive Bias
 
 **Inductive Bias**란 학습 시에는 만나보지 않았던 상황에 대하여 정확한 예측을 하기 위해 사용하는 **추가적인 가정**을 의미한다.
@@ -23,3 +25,20 @@
 - https://re-code-cord.tistory.com/entry/Inductive-Bias%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C
 
 - https://arxiv.org/abs/1806.01261
+
+---
+
+## Model Explainability
+
+**Explainability 분석:** 만든 예측 모델이 신뢰성이 있는지 검증이 필요 (Model의 Generalization 성능 테스트)
+
+- 결론에 대한 도메인 전문가의 이유와 모델의 이유가 비슷할수록 신뢰성이 있는 모델
+- 원인 분석을 통해 특정 Biomarker를 찾기도 함
+
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/76294398/209546926-e92f0bf1-4990-4ea2-b646-3a7b7ebe09f3.png">
+
+**대표적인 방법론:**
+
+- **SHAP Value:** Classical ML에서 원인분석에 많이 사용되던 기법. 게임 이론에서 게임의 참여자 간 협조로 얻어진 모든 이득으로부터 참여자들의 기여분에 따라 배분되는 값을 의미하며, ML에서는 어떤 특성의 조건부 조건에서 해당 특성이 모델 예측치의 변화를 가져오는 정도를 가리킨다.
+
+---
